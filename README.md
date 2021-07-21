@@ -102,6 +102,16 @@ You'll need to execute association methods on your Sequelize models to create th
 
     Create the code needed in `server.js` to sync the Sequelize models to the MySQL database on server start.
 
+## Demo
+
+![eCommerce](./images/demo.gif)
+
+
+## Submission
+
+* URL of the GitHub repository: https://github.com/Tewol/13-ecommerce-orm
+
+* A video demonstrating the entirety of the app's functionality: https://app.scre.io/#/my-videos/1
 
 ---
 © 2021 Hewan Redie.
