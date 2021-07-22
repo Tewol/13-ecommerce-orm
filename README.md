@@ -1,9 +1,7 @@
 # 13 Object-Relational Mapping (ORM): E-Commerce Back End
 
 
-    ``Internet retail, also known as e-commerce, is the largest sector of the electronics industry, generating an estimated $29 trillion in 2019. 
-    
-    This is a back-end e-commerce site that uses the latest technologies so that the company can compete with other e-commerce companies. You’ll configure a working Express.js API to use Sequelize to interact with a MySQL database.``
+    This is a back-end e-commerce site that uses the latest technologies to compete with other e-commerce companies.
 
 
 ## Functionality 
@@ -18,32 +16,36 @@
 
 * Testing API POST, PUT, and DELETE routes in Insomnia Core will able to successfully create, update, and delete data in my database
 
-## Mock-Up
+## Demo
 
-* Animation shows the application's GET routes to return all categories, all products, and all tags being tested:
+* GET routes to return all categories, all products, and all tags being tested:
 
-    ![Test “GET tags,” “GET Categories,” and “GET All Products.”.](./images/demo1.gif)
+    ![Tests “GET tags,” “GET Categories,” and “GET All Products.”.](./images/demo1.gif)
 
-* Animation shows the application's GET routes to return a single category, a single product, and a single tag being tested:
+* GET routes to return a single category, a single product, and a single tag being tested:
 
     ![Tests “GET tag by id,” “GET Category by ID,” and “GET One Product.”](./images/demo2.gif)
 
-* Animation shows the application's POST, PUT, and DELETE routes for categories being tested:
+* POST, PUT, and DELETE routes for categories being tested:
 
     ![Tests “DELETE Category by ID,” “CREATE Category,” and “UPDATE Category.”](./images/demo3.gif)
 
 
-## Getting Started
+## Installation and Usage 
 
-* MySQL2: https://www.npmjs.com/package/mysql2
-* Sequeliz: https://www.npmjs.com/package/sequelize
-* dotenv:https://www.npmjs.com/package/dotenv
+* npm init
+* npm install sequelize
+* npm install mysql2
+* npm install --save mysql
+* npm install dotenv
 
-The `schema.sql` file in the `db` folder creates database with MySQL shell commands.
+* npm run seed to seed data to your database.
+* npm start
 
-### Database Models
 
-Your database should contain the following four models, including the requirements listed for each model:
+## Database Models
+
+Database contain the following four models, including the requirements listed for each model:
 
 * `Category`
 
@@ -77,34 +79,18 @@ Your database should contain the following four models, including the requiremen
 
   * `tag_id`: Integer, References the `Tag` model's `id`.
 
-###
-# Associations
+## Associations
 
-You'll need to execute association methods on your Sequelize models to create the following relationships between them:
+* `Product` belongs to `Category`, and `Category` has many `Product` models.
 
-* `Product` belongs to `Category`, and `Category` has many `Product` models, as a category can have multiple products but a product can only belong to one category.
-
-* `Product` belongs to many `Tag` models, and `Tag` belongs to many `Product` models. Allow products to have multiple tags and tags to have many products by using the `ProductTag` through model.
+* `Product` belongs to many `Tag` models, and `Tag` belongs to many `Product` models.
 
 
-### API Routes to Perform create, read, update, and delete operations using your Sequelize models.
+## API Routes to create, read, update, and delete operations using sequelize models.
 
-* `product-routes.js`, 
-* `tag-routes.js`, and 
-* `category-routes.js` to perform 
-
-
-### Seed the Database
-
-    After creating the models and routes, run `npm run seed` to seed data to your database so that you can test your routes.
-
-### Sync Sequelize to the Database on Server Start
-
-    Create the code needed in `server.js` to sync the Sequelize models to the MySQL database on server start.
-
-## Demo
-
-![eCommerce](./images/demo.gif)
+* `product-routes.js` 
+* `tag-routes.js`
+* `category-routes.js` 
 
 
 ## Submission
