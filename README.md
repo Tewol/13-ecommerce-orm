@@ -26,9 +26,9 @@
 
     ![Tests “GET tag by id,” “GET Category by ID,” and “GET One Product.”](./images/demo2.gif)
 
-* POST, PUT, and DELETE routes for categories being tested:
+* POST, PUT, and DELETE routes for categories, tags and products being tested:
 
-    ![Tests “DELETE Category by ID,” “CREATE Category,” and “UPDATE Category.”](./images/demo3.gif)
+    ![Tests “CREATE, UPDATE and DELETE by ID.”](./images/Demo3.gif)
 
 
 ## Installation and Usage 
