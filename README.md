@@ -30,6 +30,11 @@
 
     ![Tests “CREATE, UPDATE and DELETE by ID.”](./images/Demo3.gif)
 
+# Technologies Used
+* Express.js API
+* MySQL
+* Sequelize
+* Insomina
 
 ## Installation and Usage 
 
